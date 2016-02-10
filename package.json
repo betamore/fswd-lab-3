@@ -1,0 +1,19 @@
+{
+  "name": "fswd-winter-2016-lab-3",
+  "version": "1.0.0",
+  "description": "Full Stack Web Development - Lab 3: Wild Wild Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./lib/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
