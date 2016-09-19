@@ -3,19 +3,21 @@
   "version": "1.0.0",
   "description": "Full Stack Web Development - Lab 3: Wild Wild Web",
   "repository": "github:betamore/fswd-lab-3",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node ./lib/server.js",
+    "lint": "eslint --ignore-path .gitignore . || exit 0",
+    "test": "istanbul cover _mocha",
+    "start": "node ./lib/index.js",
     "jspm": "jspm",
-
     "postinstall": "jspm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "istanbul": "^0.4.5",
+    "mocha": "^2.4.5",
+    "supertest": "^2.0.0"
   },
   "dependencies": {
     "express": "^4.13.4",
