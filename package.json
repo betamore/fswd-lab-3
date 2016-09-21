@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "jspm": "^0.16.45"
+    "jspm": "^0.16.45",
+    "pug": "^2.0.0-beta6"
   },
   "jspm": {
     "directories": {
