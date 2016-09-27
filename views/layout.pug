@@ -11,4 +11,6 @@ html
       .page-header
         block header
           p Header
+      if flash_message
+        p= flash_message
       block body
