@@ -8,8 +8,9 @@
     "lint": "eslint --ignore-path .gitignore . || exit 0",
     "test": "istanbul cover _mocha",
     "start": "node ./lib/index.js",
+    "postinstall": "jspm install",
     "jspm": "jspm",
-    "postinstall": "jspm install"
+    "sequelize": "sequelize"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +21,16 @@
     "supertest": "^3.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-redis": "^3.1.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "jspm": "^0.16.45"
+    "express-session": "^1.14.1",
+    "jspm": "^0.16.45",
+    "pg": "^6.1.0",
+    "pug": "^2.0.0-beta6",
+    "sequelize": "^3.24.3",
+    "sequelize-cli": "^2.4.0"
   },
   "jspm": {
     "directories": {
