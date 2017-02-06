@@ -8,7 +8,7 @@
 ## Tasks to perform
 
 * Start by looking at `public/index.html`, then take a look at the `public/app.js` file.
-* Uncomment the three `import` statements at the beginning of `public/app.js`, and then reload the page in your browser. _**MAGIC!**_
+* Uncomment the three `require` statements at the beginning of `public/app.js`, and then reload the page in your browser. _**MAGIC!**_
 * Open your browser's javascript console (In Chrome, it's under View > Developer > JavaScript Console)
 * Enter the following and see what happens:
 
