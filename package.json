@@ -1,12 +1,13 @@
 {
-  "name": "fswd-winter-2016-lab-3",
+  "name": "fswd-lab-3",
   "version": "1.0.0",
   "description": "Full Stack Web Development - Lab 3: Wild Wild Web",
   "repository": "github:betamore/fswd-lab-3",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore . || exit 0",
-    "test": "istanbul cover _mocha",
+    "test": "NODE_ENV=test istanbul cover _mocha",
+    "dev": "NODE_ENV=development node ./lib/index.js",
     "start": "node ./lib/index.js",
     "jspm": "jspm",
     "postinstall": "jspm install"
@@ -15,13 +16,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^3.15.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.1.2",
     "supertest": "^3.0.0"
   },
   "dependencies": {
     "express": "^4.13.4",
-    "jspm": "^0.16.45"
+    "jspm": "^0.16.45",
+    "morgan": "^1.8.0"
   },
   "jspm": {
     "directories": {

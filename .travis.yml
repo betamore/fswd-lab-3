@@ -1,3 +1,10 @@
 language: node_js
 node_js:
   - "stable"
+  - 6
+
+env:
+  - SCRIPT=lint
+  - SCRIPT=test
+
+script: npm run $SCRIPT

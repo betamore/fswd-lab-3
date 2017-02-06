@@ -1,8 +1,8 @@
-import bootstrap from 'bootstrap';
-import 'bootstrap/css/bootstrap.css!';
-import 'bootstrap/css/bootstrap-theme.css!'
+require('bootstrap');
+require('bootstrap/css/bootstrap.css!');
+require('bootstrap/css/bootstrap-theme.css!');
 
-import $ from 'jquery';
+var $ = require('jquery');
 
 // Make jquery available in the console
 window.$ = $;
