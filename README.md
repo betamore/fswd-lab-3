@@ -2,7 +2,7 @@
 
 * Fork the repository and clone your fork to your machine.
 * Run `npm install`.
-* Run `npm start`.
+* Run `npm run dev`.
 * Open [http://localhost:8000/](http://localhost:8000) in your browser.
 
 ## Tasks to perform
