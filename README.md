@@ -18,3 +18,13 @@
 
       $("p code").css("background-color", "blue");
 * Reload the page and watch your hard work… disappear.
+
+## In Class Exercise
+
+* Update the function so that the list elements that are created will disappear
+  or be removed from the page when clicked.
+
+## Homework
+
+* Update the function to add a button `X` to the beginning of new todo list items
+  that, when clicked, removes that list item from the list.
