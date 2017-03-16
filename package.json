@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "jspm": "^0.16.45",
+    "jspm": "0.16.52",
     "morgan": "^1.8.0"
   },
   "jspm": {
