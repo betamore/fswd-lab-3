@@ -1,3 +1,9 @@
 node_modules
 public/jspm_packages
 coverage
+public/bundle.js
+public/*.woff*
+public/*.svg
+public/*.ttf
+public/*.eot
+.nyc_output

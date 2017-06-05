@@ -1,10 +1,11 @@
+sudo: false
+dist: trusty
+
 language: node_js
 node_js:
-  - "stable"
-  - 6
+    - "7"
+    - "stable"
 
-env:
-  - SCRIPT=lint
-  - SCRIPT=test
-
-script: npm run $SCRIPT
+cache:
+  directories:
+      - node_modules
