@@ -4,9 +4,8 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/betamore/fswd-lab-3.svg)](https://greenkeeper.io/)
 
-1. Fork the repository to your own Github account.
-2. Clone your fork to your own machine.
-3. Navigate to the clone on your machine and run `npm install`
+1. Clone the repository to your own machine.
+2. Navigate to the clone on your machine and run `npm install`
 
 ### Static Files and Middleware
 
