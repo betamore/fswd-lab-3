@@ -1,6 +1,6 @@
 {
   "name": "fswd-lab-3",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Full Stack Web Development - Lab 3: Wild Wild Web",
   "repository": "github:betamore/fswd-lab-3",
   "main": "lib/index.js",
