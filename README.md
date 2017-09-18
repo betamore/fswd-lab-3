@@ -281,7 +281,8 @@ app.set('views', './views');
 The pug template language centers around the structure of the HTML document itself.
 Pug uses the indentation to determine where in the structure a particular element
 falls, then the first word of the line to determine the element to generate, and
-the rest of the text to determine the content of the element.
+the rest of the text to determine the content of the element. And inside that text
+you can insert another element with the `#[element contents]` construction.
 
 Create the `views/` directory: `mkdir views` (or add the folder in your text editor).
 Then create the `views/index.pug` file.
