@@ -1,59 +1,48 @@
 {
   "name": "fswd-lab-3",
   "version": "2.0.0",
-  "description": "Full Stack Web Development - Lab 3: Wild Wild Web",
-  "repository": "github:betamore/fswd-lab-3",
-  "main": "lib/index.js",
+  "description": "1. Fork the repository to your own Github account. 2. Clone your fork to your own machine. 3. Navigate to the clone on your machine and run `npm install`",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "nyc": "NODE_ENV=test nyc mocha",
     "test": "npm run lint && npm run nyc",
-    "dev": "NODE_ENV=development nodemon ./lib/index.js",
-    "coverage": "opn coverage/lcov-report/index.html",
-    "start": "node ./lib/index.js"
+    "dev": "NODE_ENV=development node ./lib/index.js",
+    "start": "node ./lib/index.js",
+    "coverage": "opn coverage/lcov-report/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.13.4",
+    "morgan": "^1.8.0",
+    "pug": "^2.0.0-beta11"
+  },
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-webpack": "0.0.6",
+    "bootstrap-sass": "^3.3.7",
     "css-loader": "^0.28.4",
-    "eslint": "^4.1.0",
+    "eslint": "^3.15.0",
     "exports-loader": "^0.6.4",
     "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^1.0.0-rc.0",
+    "file-loader": "^0.11.1",
     "imports-loader": "^0.7.1",
     "jquery": "^3.2.1",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "mocha": "^3.1.2",
-    "nodemon": "^1.11.0",
-    "nyc": "^11.0.2",
+    "node-sass": "^4.5.3",
+    "nyc": "^11.0.0",
     "opn-cli": "^3.1.0",
-    "style-loader": "^0.18.2",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
     "supertest": "^3.0.0",
     "url-loader": "^0.5.8",
-    "webpack": "^3.0.0",
+    "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.2"
-  },
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.13.4",
-    "morgan": "^1.8.0",
-    "pug": "^2.0.0-rc.2"
-  },
-  "jspm": {
-    "directories": {
-      "baseURL": "public"
-    },
-    "dependencies": {
-      "bootstrap": "github:twbs/bootstrap@^3.3.7",
-      "css": "github:systemjs/plugin-css@^0.1.27",
-      "jquery": "npm:jquery@^3.1.0"
-    },
-    "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
-    }
   }
 }
