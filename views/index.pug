@@ -1,0 +1,17 @@
+extends ./layout
+
+block body
+    h1 Hello world!
+    p This is coming from the #[code views/index.pug] file
+    
+    form(method="POST")
+        label(for="text_field") Text field:
+        input(type="text" name="text_field" value="starting value")
+        br
+        label(for="password") Password:
+        input(type="password" name="password")
+        br
+        input(type="hidden")
+        textarea
+        input(type="checkbox")
+        button(type="submit") Submit!

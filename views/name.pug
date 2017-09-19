@@ -1,0 +1,14 @@
+extends ./layout
+
+block body
+    h1 Hello #{name}!
+    p This is coming from the #[code views/name.pug] file
+    p= name
+    if inseam
+        if inseam > 34
+            p Wow, you are tall!
+        else if inseam < 26
+            p How is the weather down there?
+        else
+            p And I understand your inseam is #{inseam} inches.
+            
