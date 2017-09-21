@@ -9,16 +9,23 @@
     "test": "npm run lint && npm run jest",
     "dev": "NODE_ENV=development node ./lib/index.js",
     "start": "node ./lib/index.js",
-    "coverage": "opn coverage/lcov-report/index.html"
+    "coverage": "opn coverage/lcov-report/index.html",
+    "sequelize": "sequelize"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.1",
+    "connect-session-sequelize": "^4.1.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
+    "express-session": "^1.15.5",
     "morgan": "^1.8.2",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.9.0",
+    "sequelize-cli": "^3.0.0-3",
+    "sqlite3": "^3.1.11"
   },
   "devDependencies": {
     "eslint": "^4.7.0",

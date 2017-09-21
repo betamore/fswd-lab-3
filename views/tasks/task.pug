@@ -1,0 +1,14 @@
+extends ../layout
+
+block body
+    a(href="/tasks") Tasks list
+    h1 Task ##{task.id}
+    p= task.name
+    
+
+    form(action="/tasks/" + task.id
+         method="POST")
+        label(for="name") Name
+        input(type="text" name="name" value=task.name)
+        br
+        button(type="submit") Update the task
