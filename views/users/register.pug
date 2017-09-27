@@ -1,0 +1,13 @@
+extends ../layout
+
+block body
+    form(method="POST" action="/users/register")
+        
+        label(for="username") Username
+        input(type="text" name="username" value=user.username required)
+        br
+        label(for="email") Email
+        input(type="email" name="email" value=user.email required)
+        
+        br
+        button(type="submit") Register!
