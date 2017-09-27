@@ -23,6 +23,7 @@
     "express-session": "^1.15.5",
     "lodash": "^4.17.4",
     "morgan": "^1.8.2",
+    "pg": "^7.3.0",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^4.9.0",
     "sequelize-cli": "^3.0.0-3",
