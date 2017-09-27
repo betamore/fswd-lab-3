@@ -10,7 +10,8 @@
     "dev": "NODE_ENV=development nodemon ./lib/index.js",
     "start": "node ./lib/index.js",
     "coverage": "opn coverage/lcov-report/index.html",
-    "sequelize": "sequelize"
+    "sequelize": "sequelize",
+    "heroku-postbuild": "sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
