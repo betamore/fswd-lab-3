@@ -5,12 +5,13 @@ block body
     p This is coming from the #[code views/index.pug] file
     
     form(method="POST")
-        label(for="text_field") Text field:
-        input(type="text" name="text_field" value="starting value")
-        br
-        label(for="password") Password:
-        input(type="password" name="password")
-        br
-        label(for="number") Number field:
-        input(type="number" name="number")
-        button(type="submit") Submit!
+        div.form-group
+            label(for="text_field") Text field:
+            input.form-control(type="text" name="text_field" value="starting value")
+        div.form-group
+            label(for="password") Password:
+            input.form-control(type="password" name="password")
+        div.form-group
+            label(for="number") Number field:
+            input.form-control(type="number" name="number")
+        button.btn.btn-primary(type="submit") Submit!
