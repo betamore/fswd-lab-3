@@ -11,24 +11,32 @@
     "start": "node ./lib/index.js",
     "coverage": "opn coverage/lcov-report/index.html",
     "sequelize": "sequelize",
-    "heroku-postbuild": "sequelize db:migrate"
+    "sequelize-migrate": "sequelize db:migrate",
+    "heroku-postbuild": "npm run sequelize-migrate && npm run webpack",
+    "webpack": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.1",
+    "bootstrap": "^4.0.0-beta",
     "connect-session-sequelize": "^4.1.0",
     "cookie-parser": "^1.4.3",
+    "css-loader": "^0.28.7",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
+    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "morgan": "^1.8.2",
     "pg": "^7.3.0",
+    "popper.js": "^1.12.5",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^4.9.0",
     "sequelize-cli": "^3.0.0-3",
-    "sqlite3": "^3.1.11"
+    "sqlite3": "^3.1.11",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "eslint": "^4.7.0",
