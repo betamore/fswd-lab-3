@@ -4,14 +4,29 @@ block body
     h1 Hello world!
     p This is coming from the #[code views/index.pug] file
     
-    form(method="POST")
-        div.form-group
-            label(for="text_field") Text field:
-            input.form-control(type="text" name="text_field" value="starting value")
-        div.form-group
-            label(for="password") Password:
-            input.form-control(type="password" name="password")
-        div.form-group
-            label(for="number") Number field:
-            input.form-control(type="number" name="number")
-        button.btn.btn-primary(type="submit") Submit!
+    #vue-2
+    
+    #vue
+        router-link(to='/tasks') Tasks
+        router-view
+        //- p Number of tasks: {{ tasks.length }}
+        //- ul
+        //-     li(v-for="task in tasks")
+        //-         task(v-bind:task="task" v-on:select="selectTask(task)")
+        //- p Selected task is {{ selectedTask.name }}
+        //- p {{ message }}
+        //- p The sum of two numbers is {{ 1 + 1 }}
+        //- 
+        //- form(method="POST")
+        //-     div.form-group
+        //-         label(for="text_field") Text field:
+        //-         input.form-control(type="text" name="text_field" value="starting value" v-model="text_field")
+        //-     div.form-group
+        //-         label(for="password") Password:
+        //-         input.form-control(type="password" name="password" v-model="password_field")
+        //-     div.form-group
+        //-         label(for="number") Number field:
+        //-         input.form-control(type="number" name="number" v-model="number_field")
+        //-     button.btn.btn-danger(v-on:click.prevent="doAThing()") Do A Thing
+        //-     button.btn.btn-primary(type="submit" v-bind:disabled="!isFormCompleted") Submit!
+            
