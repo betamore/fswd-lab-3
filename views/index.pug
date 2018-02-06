@@ -9,5 +9,13 @@ html
         p This is coming from the #[code views/index.pug] file
 
         form(action="/name-form" method="POST")
+            label first name 
             input(type='text' name='name')
+            br
+            label last name:
+            input(type='text' name='lastName')
+            br
+            label inseam:
+            input(type='text' name='inseam')
+            br
             input(type='submit' value='submit')
