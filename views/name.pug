@@ -1,0 +1,12 @@
+html
+    head
+        title Hello world!
+
+    body
+        h1 Hello #{name}!
+        //- or h1 Hello #{name.toUpperCase()}!
+        if lastName 
+            p Last name: #{lastName}.
+        else
+            p no last name?    
+        p This is coming from the #[code views/name.pug] file.
