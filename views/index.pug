@@ -1,0 +1,12 @@
+//- views/index.pug
+html
+    head
+        title Hello world!
+        
+    body
+        h1 Hello world!
+        p This is coming from the #[code views/index.pug] file
+
+        form(action="/name-form" method="POST")
+            input(type="text" name="name")
+            input(type="submit" value="Submit")
