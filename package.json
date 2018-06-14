@@ -7,7 +7,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "jest": "jest",
     "test": "npm run lint && npm run jest",
-    "dev": "NODE_ENV=development node ./lib/index.js",
+    "dev": "NODE_ENV=development nodemon ./lib/index.js",
     "start": "node ./lib/index.js",
     "coverage": "opn coverage/lcov-report/index.html"
   },
@@ -18,11 +18,15 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "sequelize": "^4.37.10",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "jest": "^23.1.0",
+    "nodemon": "^1.17.5",
     "opn-cli": "^3.1.0",
     "supertest": "^3.1.0"
   }

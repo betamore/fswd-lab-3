@@ -4,5 +4,10 @@ block body
     h1 Tasks
 
     ul
-        each task in tasks
-            li= task
+        each task, index in tasks
+            li
+                a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name}
+
+    form(method="POST" action="/tasks")
+        input(type='text' name='name')
+        button(type='submit') Submit
