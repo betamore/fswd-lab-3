@@ -5,3 +5,8 @@ html
         p FSWD: #{season} #{year} header goes here
         block body
         p FSWD: #{season} #{year} footer goes here
+        p Last task viewed: #{lastTaskViewed}
+        if authenticated
+            p You're in!
+        else
+            p Maybe try logging in?

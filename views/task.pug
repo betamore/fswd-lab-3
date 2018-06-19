@@ -1,0 +1,9 @@
+extends ./layout
+
+block body
+    h1 Task ##{task.id}
+    p #{task.name}
+
+    if !task.isComplete()
+        form(method="POST" action="/tasks/" + task.id + "/complete")
+            button(type="submit") Complete!

@@ -3,10 +3,20 @@ extends ./layout
 block body
     h1 Tasks
 
-    ul
-        each task, index in tasks
-            li
-                a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name}
+    if completedTasks
+        h3 Completed Tasks
+        ul
+            each task, index in completedTasks
+                li
+                    a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name}
+
+    if incompleteTasks
+        h3 Incomplete Tasks
+        ul
+            each task, index in incompleteTasks
+                li
+                    a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name}
+
 
     form(method="POST" action="/tasks")
         input(type='text' name='name')
