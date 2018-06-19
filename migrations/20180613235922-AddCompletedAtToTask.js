@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.addColumn('Tasks', 'completedAt', Sequelize.DATE);
   },
 
-  down: (queryInterface, Sequelize) => {
+  down: (queryInterface) => {
     return queryInterface.removeColumn('Tasks', 'completedAt');
   }
 };

@@ -1,3 +1,4 @@
+/* eslint no-redeclare: off */
 'use strict';
 
 var fs        = require('fs');
