@@ -1,0 +1,14 @@
+extends ../layout
+
+block body
+    if error
+        p Something isn't working: #{error.message}
+    if message
+        p= message
+    form(method='POST' action='/users/profile')
+        p Username: #{user.username}
+
+        label(for="email") Email Address #{error && error.path === 'email' ? "***" : ""}
+        input(name="email" type="email" value=user.email)
+        br
+        button(type="submit") Update!

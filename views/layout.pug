@@ -8,5 +8,9 @@ html
         p Last task viewed: #{lastTaskViewed}
         if authenticated
             p You're in!
+            a(href='/users/logout') Logout
         else
             p Maybe try logging in?
+            a(href='/users/login') Login
+            br
+            a(href='/users/register') Register
