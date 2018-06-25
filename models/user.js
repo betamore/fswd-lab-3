@@ -50,7 +50,7 @@ module.exports = (sequelize, DataTypes) => {
         user.key = crypto.randomBytes(32).toString('hex');
       },
       afterCreate: function(user) {
-        console.log('Created user key: ' + user.key);
+        // console.log('Created user key: ' + user.key);
       }
     }
   });
