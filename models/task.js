@@ -16,6 +16,31 @@ module.exports = (sequelize, DataTypes) => {
         where: {
           completedAt: null
         }
+      },
+      completedToday: function() {
+        return {
+          where: {
+            completedAt: {
+              $gt: (new Date()) - (24 * 60 * 60 * 1000)
+            }
+          }
+        };
+      },
+      completedInLastXDays: function(x) {
+        return {
+          where: {
+            completedAt: {
+              $gt: (new Date()) - (x * 24 * 60 * 60 * 1000)
+            }
+          }
+        };
+      },
+      byUser: function(userId) {
+        return {
+          where: {
+            UserId: userId
+          }
+        };
       }
     }
   });
