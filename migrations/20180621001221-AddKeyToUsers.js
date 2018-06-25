@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.addColumn('Users', 'key', Sequelize.STRING);
   },
 
-  down: (queryInterface, Sequelize) => {
+  down: (queryInterface) => {
     return queryInterface.removeColumn('Users', 'key');
   }
 };
