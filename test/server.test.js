@@ -64,22 +64,15 @@ describe('registration page', function() {
     })
 });
 
-it('allow user to delete task', function() {
-    return request(server)
-        .post('/users/tasks')
-        .get()
-        .expect(200, /deleted!/);
-        
+describe('delete task', function () {
+    it('allow user to delete task', function() {
+        return request(server)
+            .post('/users/tasks')
+            .get()
+            .expect(200, /deleted!/);
+            
+    });
 });
-
-
-
-
-
-
-
-
-
 // describe('server', function() {
 //     it('should respond with "Hello world!" on /', function() {
 //         return request(server)
