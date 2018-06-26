@@ -65,11 +65,14 @@ describe('registration page', function() {
 });
 
 describe('delete task', function () {
-    it.skip('should delete a task', function() {
-        return true;
+    it('allow user to delete task', function() {
+        return request(server)
+            .post('/users/tasks')
+            .get()
+            .expect(200, /deleted!/);
+            
     });
 });
-
 // describe('server', function() {
 //     it('should respond with "Hello world!" on /', function() {
 //         return request(server)
