@@ -72,6 +72,9 @@ describe('delete task', function () {
             .expect(200, /deleted!/);
             
     });
+    it.skip('should error when task doesn\'t exist', function () {
+        return false;
+    });
 });
 // describe('server', function() {
 //     it('should respond with "Hello world!" on /', function() {
