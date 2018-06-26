@@ -1,0 +1,16 @@
+html
+    head
+        title Hello world!
+    body
+        p FSWD: #{season} #{year} header goes here
+        block body
+        p FSWD: #{season} #{year} footer goes here
+        p Last task viewed: #{lastTaskViewed}
+        if authenticated
+            p You're in!
+            a(href='/users/logout') Logout
+        else
+            p Maybe try logging in?
+            a(href='/users/login') Login
+            br
+            a(href='/users/register') Register

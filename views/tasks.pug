@@ -1,0 +1,27 @@
+extends ./layout
+
+block body
+    h1 Tasks
+
+    if completedTasks
+        h3 Completed Tasks
+        ul
+            each task, index in completedTasks
+                li
+                    a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name}    
+                       button(type="submit") Delete!
+                       form(method="POST" action="/tasks" + task.id + "/deletetask")
+                        
+
+    if incompleteTasks
+        h3 Incomplete Tasks
+        ul
+            each task, index in incompleteTasks
+                li
+                    a(href="/tasks/" + task.id) Task ##{task.id}: #{task.name} 
+                       button(type="submit") Delete!
+                       form(method="POST" action="/tasks" + task.id + "/deletetask")
+
+    form(method="POST" action="/tasks")
+        input(type='text' name='name')
+        button(type='submit') Submit

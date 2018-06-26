@@ -1,0 +1,16 @@
+extends ../layout
+
+block body
+    if error
+        p= error
+    form(method="POST" action="/users/register")
+        label(for="username") Username
+        input(name="username" type="text" value=username)
+        br
+        label(for="password") Password
+        input(name="password" type="password")
+        br
+        label(for="password_confirm") Password confirm
+        input(name="password_confirm" type="password")
+        br
+        button(type="submit") Register
